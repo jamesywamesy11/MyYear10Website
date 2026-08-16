@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "file:///C:/Users/User/Downloads/MyYear10Website/index.html",
+            "url": "file:///H:/10DGT/MyYear10Website/index.html",
             "webRoot": "${workspaceFolder}"
         }
     ]
