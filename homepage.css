@@ -1,0 +1,149 @@
+/* --------------------------------------------- */
+/* HOMEPAGE ONLY STYLING                         */
+/* --------------------------------------------- */
+
+body {
+    font-family: "Times New Roman", serif;
+    background-color: rgb(0, 30, 70);
+}
+
+/* --------------------------------------------- */
+/* HERO FIX                                      */
+/* --------------------------------------------- */
+
+.hero {
+    background-color: rgb(0, 30, 70) !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    margin: 0;
+    padding: 0;
+}
+
+/* Dark blue cover box to hide the white line */
+.hero-cover {
+    background-color: rgb(0, 30, 70);
+    height: 20px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* --------------------------------------------- */
+/* TOPIC HEADER NAVIGATION                       */
+/* --------------------------------------------- */
+
+.topic-nav {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+    background-color: rgb(0, 30, 70) !important;
+    padding: 1em 0;
+    margin: 0;
+    width: 100%;
+}
+
+.topic-nav a {
+    font-size: 1.4em;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.3em 0.5em;
+    transition: 0.25s ease;
+}
+
+.topic-nav a:hover {
+    color: rgb(0, 162, 255);
+    transform: translateY(-3px);
+}
+
+/* --------------------------------------------- */
+/* TOPIC SECTION — FULL WHITE AREA               */
+/* --------------------------------------------- */
+
+.topic {
+    background-color: white !important;
+    margin: 0;
+    padding: 2em 0 2em 0;
+}
+
+.topic-title {
+    background-color: rgb(0, 30, 70) !important;
+    margin-top: 0;
+    padding: 1em 0;
+}
+
+/* --------------------------------------------- */
+/* HOMEPAGE TITLE                                */
+/* --------------------------------------------- */
+
+.home-title {
+    color: rgb(248, 249, 250);
+    font-size: 2em;
+    text-align: center;
+    margin: 0;
+    font-weight: 700;
+    padding: 0.4em 0;
+    background-color: rgb(0, 30, 70);
+    width: 100%;
+}
+
+/* --------------------------------------------- */
+/* HOMEPAGE BUTTONS                              */
+/* --------------------------------------------- */
+
+.home-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin-top: 1.5em;
+}
+
+.home-buttons .home-btn {
+    background-color: rgb(0, 30, 70);
+    color: white;
+    padding: 0.8em;
+    width: 160px;
+    text-align: center;
+    border-radius: 0.4em;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.25s ease;
+    display: inline-block;
+}
+
+.home-buttons .home-btn:hover {
+    background-color: rgb(0, 50, 120);
+    transform: translateY(-4px);
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.25);
+}
+
+/* --------------------------------------------- */
+/* FOOTER — SMALLER, CLEANER                     */
+/* --------------------------------------------- */
+
+.footer {
+    background-color: rgb(0, 30, 70);
+    color: white;
+    text-align: right;
+    padding: 1.5em 3em;
+    margin: 0;
+}
+
+/* Remove all default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Prevent hero image from showing gaps */
+.hero {
+    overflow: hidden;
+}
+
+/* Ensure everything above the white section is dark blue */
+header, section, nav {
+    background-color: rgb(0, 30, 70);
+}
