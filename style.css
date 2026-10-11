@@ -1,0 +1,184 @@
+/* A simple css reset */
+  body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* reset for images to ensure they ar 100% of the parent container width */
+img {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333333;
+    display: flex;
+    justify-content: center;      /* center the items */
+    gap: 4em;                     /* evenly spaced */
+    align-items: center;          /* vertical alignment */
+    width: 100%;                  /* full width bar */
+}
+
+.hero {
+    background-image: url('images/1 - Image Creation/website header.png');
+    height: 25vh;
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(0, 30, 70);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 162, 255);
+    text-align: center;
+    position: relative;
+}
+
+/* BIG text styling for the hero section text */
+.hero-text {
+    font-size: 4em;
+    font-weight: bold;
+}
+
+/* nice big font on a banner style background */
+.topic-title{
+    color: white;
+    font-size: 2em;
+    padding: 0.1em 3em;
+    background-color: rgb(0, 30, 70);
+    text-align: center;
+}
+
+/* Three column grid with a nice big gap */
+.topic-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6em;
+    /* bring the whole section in off the sides of the page */
+    width: 70%;
+    /* top margin of 3em and center right/left */
+    margin: 3em auto;
+}
+
+/* --------------------------------------------- */
+/* TOPIC HEADER NAVIGATION                       */
+/* --------------------------------------------- */
+
+.topic-nav {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+    background-color: rgb(0, 30, 70) !important;
+    padding: 1em 0;
+    margin: 0;
+    width: 100%;
+}
+
+.topic-nav a {
+    font-size: 1.4em;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.3em 0.5em;
+    transition: 0.25s ease;
+}
+
+.topic-nav a:hover {
+    color: rgb(0, 162, 255);
+    transform: translateY(-3px);
+}
+
+/* Intro text*/
+.home-big-box {
+    background-color: rgb(35, 71, 95);
+    color: white;
+    padding: 30px;
+    margin: 30px auto;
+    border-radius: 12px;
+    max-width: 900px;
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+
+/* Hover for big box*/
+.home-big-box:hover {
+    transform: scale(1.05);
+    background-color: rgb(0, 50, 120);
+    box-shadow: 12px 12px 18px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease;
+}
+
+.topic-card{
+    background-color: rgb(35, 71, 95);
+    color: white;
+    padding: 1em;
+    border-radius: 0.5em;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+.topic-card-text{
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    /* center align text */
+    text-align: center;
+}
+.footer{
+    background-color: rgb(0, 30, 70);
+    color: white;
+    text-align: right;
+    padding: 3em 3em; }
+
+body {
+    font-family: "Times New Roman", serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Topic card container */
+.topic-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4em;
+    width: 70%;
+    margin: 3em auto;
+}
+
+/* Individual topic cards */
+.topic-card {
+    background-color: rgb(35, 71, 95);
+    color: white;
+    padding: 1em;
+    border-radius: 0.5em;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.25s ease;
+    cursor: pointer;
+}
+
+/* Card title */
+.topic-card-text {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 0.5em;
+}
+
+/* Hover effect — grow + color change */
+.topic-card:hover {
+    transform: scale(1.05); /* slightly bigger */
+    background-color: rgb(0, 50, 120); /* new hover color */
+    box-shadow: 12px 12px 18px rgba(0, 0, 0, 0.3);
+}
+
+.game-embed {
+    width: 100%;
+    max-width: 300px; /* make it smaller */
+    height: 180px;
+    border: none;
+    display: block;
+    margin: 0 auto; /* center it */
+}
